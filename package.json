@@ -1,0 +1,25 @@
+{
+  "author": "Kris Windham <kriswindham@gmail.com> (http://krwindhma.jit.su)",
+  "name": "flatiron-example",
+  "description": "Example web app using flatiron",
+  "version": "0.0.0",
+  "homepage": "flatiron-example.nodejitsu.com",
+  "repository": {
+    "url": "https://github.com/flatiron-example"
+  },
+  "main": "./bin/server",
+  "scripts": {
+    "test": "mocha",
+    "start": "./bin/server"
+  },
+  "dependencies": {
+    "flatiron": "0.1.16"
+  },
+  "devDependencies": {
+    "mocha": "1.0.1"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "0.6.x"
+  }
+}
