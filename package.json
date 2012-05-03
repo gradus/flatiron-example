@@ -13,7 +13,9 @@
     "start": "./bin/server"
   },
   "dependencies": {
-    "flatiron": "0.1.16"
+    "flatiron": "0.1.16",
+    "union": "0.3.0",
+    "ecstatic": "0.1.6"
   },
   "devDependencies": {
     "mocha": "1.0.1"
@@ -21,5 +23,6 @@
   "optionalDependencies": {},
   "engines": {
     "node": "0.6.x"
-  }
+  },
+  "subdomain": "flatiron-example"
 }
