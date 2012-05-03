@@ -2,10 +2,10 @@
   "author": "Kris Windham <kriswindham@gmail.com> (http://krwindhma.jit.su)",
   "name": "flatiron-example",
   "description": "Example web app using flatiron",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "flatiron-example.nodejitsu.com",
   "repository": {
-    "url": "https://github.com/flatiron-example"
+    "url": "https://github.com/gradus/flatiron-example"
   },
   "main": "./bin/server",
   "scripts": {
