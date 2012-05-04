@@ -9,7 +9,7 @@
     <script src="/javascripts/mode/javascript/javascript.js"></script>
     <script src="/javascripts/mode/scheme/scheme.js"></script>
     <style type="text/css">
-      .CodeMirror {border: 1px solid #ccc;}
+      .CodeMirror {border: 1px solid #ccc;margin:5px;}
     </style>
   </head>
   <body>
@@ -20,22 +20,26 @@
 
       <div id="content">
 
-        <h4> Create Gist </h4>
+        <h4> New Gist </h4>
 
         <form method="POST" action="/">
-          <label>Name</label>
-          <input type="text" name="name" size="70" />
+          <label>File name</label>
+          <br />
+          <input type="text" name="name" />
           <br />
           <label>Description</label>
-          <input type="text" name="description" size="70" />
           <br />
-          <h4>Gist</h4>
+          <input type="text" name="description" size="80"  />
+          <br />
+          <label>Gist</label>
+          <br />
           <textarea id="code" name="code"></textarea>
           <p>
             <input id="send_button" type="submit" value="Submit" />
           </p>
         </form>
       </div>
+      <div id="clear"></div>
       <div id="footer">
         Created with <a href="flatironjs.org">FlatironJS</a>
       </div>

@@ -11,6 +11,7 @@ h2 {
   color: #999;
   font-size: 27px;
   margin: 10px 0 0 20px;
+  padding-bottom: 20px;
 }
 
 h3 {
@@ -18,7 +19,7 @@ h3 {
 }
 
 h4 {
-  padding-top: 10px;
+  padding-top: 4px;
 }
 
 a, a:visited {
@@ -27,7 +28,7 @@ a, a:visited {
 }
 
 a:hover {
-  color: #ffA400;
+  color: DarkGoldenRod;
 }
 
 #wrap {
@@ -37,7 +38,7 @@ a:hover {
 }
 
 #header {
-  background-color: cornsilk;
+  background-color: OldLace;
   width: 100%;
   padding: 10px;
   text-align: center;
@@ -47,11 +48,12 @@ a:hover {
 
 #content {
   background-color: Ivory;
-  width: 100%;
-  padding: 0;
+  width: 96%;
+  padding: 2px 2px 50px 20px;
   margin: 0;
   border-radius: 5px;
   color: #171717;
+  text-align: left;
 }
 
 #content ul {
@@ -98,27 +100,29 @@ a:hover {
 
 #send_button {
  color: #ffffff;
- background-color:#ffA400;
+ background-color:LightSalmon;
  border-width:1px;
  border-style:solid;
- border-bottom-color:#ff6200;
+ border-bottom-color:Coral;
  border-right-color:#f06400;
- border-top-color:#f9FF05;
+ border-top-color:lightyellow;
  border-left-color:#f9FF09;
  font-size:22px;
+ float: right;
+ margin:10px;
  -moz-border-radius: 5px;
  -webkit-border-radius: 5px;
  }
  
 #send_button:hover {
- background-color:#ffCC00;
+ background-color:IndianRed;
  cursor: pointer;
 }
 
 #footer {
-  background-color: blanchedAlmond;
-  width: 100%;
-  padding: 20px 1px;
+  background-color: whitesmoke;
+  width: 96%;
+  padding: 20px 12px;
   text-align: right;
   margin-bottom: 4px;
   border-radius: 5px;
