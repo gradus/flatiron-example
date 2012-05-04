@@ -69,7 +69,7 @@ a:hover {
 
 #chat_input {margin-top:20px;}
 
-#gist {
+#gist, #list, #show {
   background-color: whitesmoke;
   padding: 1px 6px;
   color: #161616;
