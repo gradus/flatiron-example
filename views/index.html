@@ -7,10 +7,18 @@
   </head>
   <body>
     <h3> Flatiron Example </h3>
+    <h4> Create Gist </h4>
     <div id="gist"></div>
-    <form method="POST" action="/">
-      <textarea name="gist" cols=60 rows=20></textarea>
 
+    <form method="POST" action="/">
+      <label>Name</label>
+      <input type="text" name="name" />
+      <br />
+      <label>Description</label>
+      <input type="text" name="description" size="50" />
+      <br />
+      <h4>Gist</h4>
+      <textarea name="gist" cols=60 rows=20></textarea>
       <p>
         <input type="submit" value="Submit" />
       </p>
