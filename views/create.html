@@ -12,11 +12,22 @@
       <div>
 
       <div id="content">
-        <h4> A simple app to create and display gists </h4>
-        <ul>
-          <li><a href="create">New gist</a>
-          <li><a href="list">List gists</a>
-        </ul>
+
+        <h4> Create Gist </h4>
+
+        <form method="POST" action="/">
+          <label>Name</label>
+          <input type="text" name="name" size="70" />
+          <br />
+          <label>Description</label>
+          <input type="text" name="description" size="70" />
+          <br />
+          <h4>Gist</h4>
+          <textarea name="gist" cols=60 rows=20></textarea>
+          <p>
+            <input id="send_button" type="submit" value="Submit" />
+          </p>
+        </form>
       </div>
       <div id="footer">
         Created with <a href="flatironjs.org">FlatironJS</a>
