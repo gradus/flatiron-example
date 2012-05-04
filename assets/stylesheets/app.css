@@ -17,6 +17,10 @@ h3 {
   color: #999
 }
 
+h4 {
+  padding-top: 10px;
+}
+
 a, a:visited {
   text-decoration: none;
   color: #666
@@ -69,6 +73,7 @@ a:hover {
   background-color: whitesmoke;
   padding: 1px 6px;
   color: #161616;
+  text-align: left;
  -moz-border-radius: 5px;
  -webkit-border-radius: 5px;
 }
