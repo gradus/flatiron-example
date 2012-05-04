@@ -71,7 +71,7 @@ a:hover {
 
 #gist, #list, #show {
   background-color: whitesmoke;
-  padding: 1px 6px;
+  padding: 5px 10px;
   color: #161616;
   text-align: left;
  -moz-border-radius: 5px;
@@ -118,7 +118,7 @@ a:hover {
 #footer {
   background-color: blanchedAlmond;
   width: 100%;
-  padding: 0;
+  padding: 20px 1px;
   text-align: right;
   margin-bottom: 4px;
   border-radius: 5px;

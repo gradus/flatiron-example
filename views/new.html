@@ -4,6 +4,13 @@
     <title>Flatiron Example App</title>
     <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=1" />
     <link rel="stylesheet" href="/stylesheets/app.css" />
+    <link rel="stylesheet" href="/stylesheets/codemirror.css">
+    <script src="/javascripts/codemirror.js"></script>
+    <script src="/javascripts/mode/javascript/javascript.js"></script>
+    <script src="/javascripts/mode/scheme/scheme.js"></script>
+    <style type="text/css">
+      .CodeMirror {border: 1px solid #ccc;}
+    </style>
   </head>
   <body>
     <div id="wrap">
@@ -23,7 +30,7 @@
           <input type="text" name="description" size="70" />
           <br />
           <h4>Gist</h4>
-          <textarea name="gist" cols=60 rows=20></textarea>
+          <textarea id="code" name="code"></textarea>
           <p>
             <input id="send_button" type="submit" value="Submit" />
           </p>
@@ -33,5 +40,24 @@
         Created with <a href="flatironjs.org">FlatironJS</a>
       </div>
     </div>
+    <script>
+      var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        mode: "scheme",
+        lineNumbers: true,
+        matchBrackets: true,
+        tabMode: "indent",
+        onChange: function() {
+          clearTimeout(pending);
+          setTimeout(update, 400);
+        }
+      });
+      var pending;
+      function looksLikeScheme(code) {
+        return !/^\s*\(\s*function\b/.test(code) && /^\s*[;\(]/.test(code);
+      }
+      function update() {
+        editor.setOption("mode", looksLikeScheme(editor.getValue()) ? "scheme" : "javascript");
+      }
+  </script>
   </body>
 </html>
