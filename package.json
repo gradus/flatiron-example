@@ -9,7 +9,7 @@
   },
   "main": "./bin/server",
   "scripts": {
-    "test": "mocha",
+    "test": "vows test/*-test.js --spec",
     "start": "./bin/server"
   },
   "dependencies": {
@@ -20,7 +20,8 @@
     "plates": "0.4.6"
   },
   "devDependencies": {
-    "mocha": "1.0.1"
+    "nock": "0.8.x",
+    "vows": "0.6.x"
   },
   "optionalDependencies": {},
   "engines": {
