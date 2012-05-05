@@ -13,13 +13,23 @@
 
       <div id="content">
         <h4> A simple app to create and display gists </h4>
-        <div id="code"></div>
-        <ul>
-          <li><a href="new">New gist</a>
-          <li><a href="list">List gists</a>
-          <li><a href="login">Login</a>
-          <li><a href="/users/new">Sign Up</a>
-        </ul>
+        <div id="login">
+          <form method="POST" action="/login">
+            <label>Username</label>
+            <br />
+            <input type="text" name="username" />
+            <br />
+            <label>Password</label>
+            <br />
+            <input type="password" name="password" />
+            <br />
+            <p>
+              <input id="send_button" type="submit" value="Submit" />
+            </p>
+          </form>
+          <p>Not a User?<p>
+          <p><a href='/users/new'>Sign Up</a>
+        </div>
       </div>
       <div id="footer">
         Created with <a href="flatironjs.org">FlatironJS</a>

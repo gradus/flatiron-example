@@ -2,7 +2,7 @@
   "author": "Kris Windham <kriswindham@gmail.com> (http://krwindham.jit.su)",
   "name": "flatiron-example",
   "description": "Example web app to display and create gists built w/ flatiron",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "homepage": "flatiron-example.nodejitsu.com",
   "repository": {
     "url": "https://github.com/gradus/flatiron-example"

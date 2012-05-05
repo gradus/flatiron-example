@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flatiron Example App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=1" />
+    <link rel="stylesheet" href="/stylesheets/app.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="header">
+        <h2> <a href="/">Flatiron Example</a></h2>
+      <div>
+
+      <div id="content">
+        <h4> A simple app to create and display gists </h4>
+        <div id="user">
+          <form method="POST" action="/login">
+            <label>Email</label>
+            <br />
+            <input type="text" name="email" />
+            <br />
+            <label>Username</label>
+            <br />
+            <input type="text" name="username" />
+            <br />
+            <label>Password</label>
+            <br />
+            <input type="password" name="password" />
+            <br />
+            <label>Password Confirmation</label>
+            <br />
+            <input type="password" name="passwordConfirmation" />
+            <br />
+            <p>
+              <input id="send_button" type="submit" value="Sign Up" />
+            </p>
+          </form>
+        </div>
+      </div>
+      <div id="footer">
+        Created with <a href="flatironjs.org">FlatironJS</a>
+      </div>
+    </div>
+  </body>
+</html>

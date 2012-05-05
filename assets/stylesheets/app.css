@@ -25,7 +25,8 @@ h4 {
 
 a, a:visited {
   text-decoration: none;
-  color: #666
+  color: #666;
+  padding: 5px;
 }
 
 a:hover {
@@ -70,8 +71,6 @@ a:hover {
 
 #left img { margin: 10px; }
 
-#chat_input {margin-top:20px;}
-
 #gist, #list, #show {
   background-color: whitesmoke;
   padding: 5px 10px;
@@ -91,12 +90,12 @@ a:hover {
  -webkit-border-radius: 5px;
 }
 
-#text_input{
-  width: 510px;
-  height: 25px;
-  font-size:20px;
-  color: #666;
-  margin: 10px 0;
+form input {
+  width: 200px;
+}
+
+form input.description {
+  width: 500px;
 }
 
 #send_button {
@@ -109,7 +108,6 @@ a:hover {
  border-top-color:lightyellow;
  border-left-color:#f9FF09;
  font-size:22px;
- float: right;
  margin:10px;
  -moz-border-radius: 5px;
  -webkit-border-radius: 5px;
