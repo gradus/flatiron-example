@@ -1,8 +1,8 @@
 {
-  "author": "Kris Windham <kriswindham@gmail.com> (http://krwindham.jit.su)",
+  "author": "Kris Windham <kriswindham@gmail.com> (http://krwindham.aws.af.cm)",
   "name": "flatiron-example",
   "description": "Example web app to display and create gists built w/ flatiron",
-  "version": "0.0.17",
+  "version": "0.1.0",
   "homepage": "flatiron-example.nodejitsu.com",
   "repository": {
     "url": "https://github.com/gradus/flatiron-example"
@@ -13,19 +13,19 @@
     "start": "./bin/server"
   },
   "dependencies": {
-    "flatiron": "0.1.16",
-    "union": "0.3.0",
-    "ecstatic": "0.1.6",
-    "resourceful": "0.1.10",
-    "plates": "0.4.6"
+    "flatiron": "0.3.5",
+    "union": "0.3.5",
+    "ecstatic": "0.4.2",
+    "resourceful": "0.3.3",
+    "plates": "0.4.8"
   },
   "devDependencies": {
-    "nock": "0.8.x",
-    "vows": "0.6.x"
+    "nock": "0.17.x",
+    "vows": "0.7.x"
   },
   "optionalDependencies": {},
   "engines": {
-    "node": "0.6.x"
+    "node": "0.6.x || 0.8.x || 0.10.x"
   },
   "subdomain": "flatiron-example"
 }
