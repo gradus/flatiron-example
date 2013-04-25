@@ -1,0 +1,19 @@
+---
+applications:
+  .:
+    name: Flatiron Example
+    framework:
+      name: standalone
+      info:
+        mem: 64M
+        description: Standalone Application
+        exec: 
+    runtime: node08
+    command: ./bin/server
+    infra: aws
+    url: 
+    mem: 1G
+    instances: 1
+    services:
+      redis-47b4e:
+        type: redis
